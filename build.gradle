@@ -1,0 +1,28 @@
+plugins {
+    id 'java'
+}
+
+group = 'org.example'
+version = '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation 'org.seleniumhq.selenium:selenium-java:4.40.0'
+    implementation 'org.testng:testng:7.11.0'
+}
+
+compileJava.options.encoding = 'UTF-8'
+
+tasks.withType(JavaCompile){
+    options.encoding = 'UTF-8'
+}
+
+test {
+    useTestNG(){
+        useDefaultListeners = true // khai báo sử dụng TestNG
+        outputDirectory = file("$projectDir/test-output") // chỉ định thư mục đầu ra cho report kết quả kiểm thử
+    }
+}
