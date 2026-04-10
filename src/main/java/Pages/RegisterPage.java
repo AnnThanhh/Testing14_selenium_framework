@@ -1,12 +1,13 @@
 package Pages;
 
+import Constants.TimeOutConstant;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-public class RegisterPage {
+public class RegisterPage extends CommonPage {
     //các locator của page (thuộc tính của lớp đối tượng)
     private By byInputUserName = By.id("taiKhoan");
     private By byInputPassword = By.id("matKhau");
@@ -19,43 +20,49 @@ public class RegisterPage {
 
     //constructor khởi tạo
     public RegisterPage(WebDriver driver) {
-        this.driver = driver;
+        super(driver);
     }
 
     //các phương thức tương tác với page (hành vi của lớp đối tượng)
     public void inputUserName (String username){
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-        WebElement inputUserName = wait.until(ExpectedConditions.visibilityOfElementLocated(byInputUserName));
-        inputUserName.sendKeys(username);
+        inputUserName(username, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+    public void inputUserName (String username, long timeOutInSec){
+        inputText(byInputUserName, username, timeOutInSec);
     }
 
     public void inputPassword (String password){
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-        WebElement inputPassword = wait.until(ExpectedConditions.visibilityOfElementLocated(byInputPassword));
-        inputPassword.sendKeys(password);
+        inputPassword(password, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+    public void inputPassword (String password, long timeOutInSec){
+        inputText(byInputPassword, password, timeOutInSec);
     }
 
     public void inputConfirmPassword (String confirmPassword){
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-        WebElement inputConfirmPassword = wait.until(ExpectedConditions.visibilityOfElementLocated(byConfirmPassword));
-        inputConfirmPassword.sendKeys(confirmPassword);
+        inputConfirmPassword(confirmPassword, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+    public void inputConfirmPassword (String confirmPassword, long timeOutInSec){
+        inputText(byConfirmPassword, confirmPassword, timeOutInSec);
     }
 
     public void inputHoTen (String hoTen){
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-        WebElement inputHoTen = wait.until(ExpectedConditions.visibilityOfElementLocated(byInputHoTen));
-        inputHoTen.sendKeys(hoTen);
+        inputHoTen(hoTen, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+    public void inputHoTen (String hoTen, long timeOutInSec){
+        inputText(byInputHoTen, hoTen, timeOutInSec);
     }
 
     public void inputEmail (String email){
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-        WebElement inputEmail = wait.until(ExpectedConditions.visibilityOfElementLocated(byInputEmail));
-        inputEmail.sendKeys(email);
+        inputEmail(email, TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+    public void inputEmail (String email, long timeOutInSec){
+        inputText(byInputEmail, email, timeOutInSec);
     }
 
     public void clickBtnRegister (){
-        WebDriverWait wait = new WebDriverWait(driver, java.time.Duration.ofSeconds(10));
-        WebElement btnRegisterClick = wait.until(ExpectedConditions.elementToBeClickable(btnClickRegister));
-        btnRegisterClick.click();
+        clickBtnRegister(TimeOutConstant.TIME_OUT_DEFAULT);
+    }
+    public void clickBtnRegister (long timeOutInSec){
+        clickBtn(btnClickRegister, timeOutInSec);
     }
 }

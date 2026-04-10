@@ -129,11 +129,23 @@
                   <a name="testValidRegister">
                   </a> <!-- testValidRegister -->
                   <span class="method-name">testValidRegister</span>
-                  <div class="stack-trace">java.lang.AssertionError: VP1: Đăng ký thành công! - MESSAGE DOES NOT MATCH expected [Đăng ký thành công!] but found [Đăng ký thành công]
-	at testcase.register.Register_01_Verify_Sucessfull.testValidRegister(Register_01_Verify_Sucessfull.java:81)
+                  <div class="stack-trace">org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.id: swal2-title, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#swal2\-title&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /var/folders/ch/pjrjkjvj76n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64851}, goog:processID: 43955, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64851/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bb44d50ca9c4224213faf00bb48a247
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Base.BasePage.waitForElementVisible(BasePage.java:21)
+	at Base.BasePage.getTextElement(BasePage.java:47)
+	at Base.BasePage.getTextElement(BasePage.java:51)
+	at Pages.CommonDialog.getTitleDialog(CommonDialog.java:16)
+	at testcase.register.Register_01_Verify_Sucessfull.testValidRegister(Register_01_Verify_Sucessfull.java:87)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-... Removed 45 stack frames
+... Removed 40 stack frames
 </div> <!-- stack-trace -->
                   <em>
 (Kiểm tra đăng ký thành công với dữ liệu hợp lệ)                  </em>
@@ -196,12 +208,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'testValidRegister')
 data.setCell(0, 2, 'testcase.register.Register_01_Verify_Sucessfull')
-data.setCell(0, 3, 5639);
+data.setCell(0, 3, 15756);
 window.suiteTableData['Gradle_suite']= { tableData: data, tableDiv: 'times-div-Gradle_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 5 seconds</span>
+              <span class="suite-total-time">Total running time: 15 seconds</span>
               <div id="times-div-Gradle_suite">
               </div> <!-- times-div-Gradle_suite -->
             </div> <!-- times-div -->

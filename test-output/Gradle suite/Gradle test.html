@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Mon Apr 06 20:50:40 ICT 2026</td>
+<td>Started on:</td><td>Fri Apr 10 20:47:53 ICT 2026</td>
 </tr>
-<tr><td>Total time:</td><td>5 seconds (5678 ms)</td>
+<tr><td>Total time:</td><td>15 seconds (15772 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,18 +77,37 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='testcase.register.Register_01_Verify_Sucessfull.testValidRegister()'><b>testValidRegister</b><br>Test class: testcase.register.Register_01_Verify_Sucessfull<br>Test method: Kiểm tra đăng ký thành công với dữ liệu hợp lệ</td>
-<td><div><pre>java.lang.AssertionError: VP1: Đăng ký thành công! - MESSAGE DOES NOT MATCH expected [Đăng ký thành công!] but found [Đăng ký thành công]
-	at testcase.register.Register_01_Verify_Sucessfull.testValidRegister(Register_01_Verify_Sucessfull.java:81)
+<td><div><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.id: swal2-title, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#swal2\-title&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /var/folders/ch/pjrjkjvj76n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64851}, goog:processID: 43955, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64851/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bb44d50ca9c4224213faf00bb48a247
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Base.BasePage.waitForElementVisible(BasePage.java:21)
+	at Base.BasePage.getTextElement(BasePage.java:47)
+	at Base.BasePage.getTextElement(BasePage.java:51)
+	at Pages.CommonDialog.getTitleDialog(CommonDialog.java:16)
+	at testcase.register.Register_01_Verify_Sucessfull.testValidRegister(Register_01_Verify_Sucessfull.java:87)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
 	at jdk.proxy1/jdk.proxy1.$Proxy4.stop(Unknown Source)
-... Removed 45 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1930240356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1930240356'><pre>java.lang.AssertionError: VP1: Đăng ký thành công! - MESSAGE DOES NOT MATCH expected [Đăng ký thành công!] but found [Đăng ký thành công]
-	at org.testng.Assert.fail(Assert.java:111)
-	at org.testng.Assert.failNotEquals(Assert.java:1590)
-	at org.testng.Assert.assertEqualsImpl(Assert.java:150)
-	at org.testng.Assert.assertEquals(Assert.java:132)
-	at org.testng.Assert.assertEquals(Assert.java:656)
-	at testcase.register.Register_01_Verify_Sucessfull.testValidRegister(Register_01_Verify_Sucessfull.java:81)
+... Removed 40 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1930240356", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1930240356'><pre>org.openqa.selenium.TimeoutException: Expected condition failed: waiting for visibility of element found by By.id: swal2-title, but... org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;#swal2\-title&quot;}.
+(tried for 10 seconds with 500 milliseconds interval)
+Build info: version: &apos;4.40.0&apos;, revision: &apos;b3333f1&apos;
+System info: os.name: &apos;Mac OS X&apos;, os.arch: &apos;aarch64&apos;, os.version: &apos;15.6.1&apos;, java.version: &apos;21.0.8&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 146.0.7680.178, chrome: {chromedriverVersion: 146.0.7680.165 (4b989da09e1..., userDataDir: /var/folders/ch/pjrjkjvj76n...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:64851}, goog:processID: 43955, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:64851/devtoo..., se:cdpVersion: 146.0.7680.178, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: 6bb44d50ca9c4224213faf00bb48a247
+	at org.openqa.selenium.support.ui.WebDriverWait.timeoutException(WebDriverWait.java:84)
+	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:231)
+	at Base.BasePage.waitForElementVisible(BasePage.java:21)
+	at Base.BasePage.getTextElement(BasePage.java:47)
+	at Base.BasePage.getTextElement(BasePage.java:51)
+	at Pages.CommonDialog.getTitleDialog(CommonDialog.java:16)
+	at testcase.register.Register_01_Verify_Sucessfull.testValidRegister(Register_01_Verify_Sucessfull.java:87)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:580)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
@@ -132,7 +151,7 @@ function toggleAllBoxes() {
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.run(GradleWorkerMain.java:69)
 	at worker.org.gradle.process.internal.worker.GradleWorkerMain.main(GradleWorkerMain.java:74)
 </pre></div></td>
-<td>5</td>
+<td>15</td>
 <td>testcase.register.Register_01_Verify_Sucessfull@3a7442c7</td></tr>
 </table><p>
 </body>
