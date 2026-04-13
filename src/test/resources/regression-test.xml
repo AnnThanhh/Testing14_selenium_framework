@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<!--định nghĩa toàn bộ test, chứa toàn bộ test-->
+<suite name="All Test Suite">
+<!--    nhóm test -->
+    <test verbose="2" preserve-order="true"
+          name="Regesstion test">
+        <classes>
+<!--            những file test case nào sẽ được chạy -->
+            <class name="testcase.register.Register_01_Verify_Sucessfull">
+<!--                những method được chạy / @test nào được chạy -->
+                <methods>
+                    <include name="testValidRegister"/>
+                </methods>
+            </class>
+            <class name="testcase.login.Login01_Verify_Successfull">
+                <methods>
+                    <include name="testValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

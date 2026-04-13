@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+    <test verbose="2" preserve-order="true"
+          name="/Users/at/Documents/Testing14/Selenium-framework/src/test/java/testcase/login/Login01_Verify_Successfull.java">
+        <classes>
+            <class name="testcase.login.Login01_Verify_Successfull">
+                <methods>
+                    <include name="testValidLogin"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>

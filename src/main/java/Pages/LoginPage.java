@@ -38,6 +38,6 @@ public class LoginPage extends BasePage {
         clickBtnLogin(TimeOutConstant.TIME_OUT_DEFAULT);
     }
     public void clickBtnLogin (long timeOutInSec){
-        clickBtn(byInputPassword, timeOutInSec);
+        clickBtn(btnClickLogin, timeOutInSec);
     }
 }
