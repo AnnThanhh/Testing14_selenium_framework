@@ -17,6 +17,7 @@ import org.openqa.selenium.chrome.ChromeOptions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 import org.testng.asserts.SoftAssert;
 
@@ -24,8 +25,17 @@ import java.time.Duration;
 import java.util.UUID;
 
 public class Register_01_Verify_Sucessfull extends BaseTest {
+//    @DataProvider(name = "registerData")
+//    public Object[][] dpMethod() {
+//        return new Object[][]{
+//                {"user1", "pass1"},
+//                {"user2", "pass2"}
+//        };
+//
+//    }
     //gõ snippet: test -> 1 annotation
     //assert -> hard assert và soft assert
+//    @Test(description = "Kiểm tra đăng ký thành công với dữ liệu hợp lệ", dataProvider = "registerData")
     @Test(description = "Kiểm tra đăng ký thành công với dữ liệu hợp lệ")
     public void testValidRegister() {
         String account = UUID.randomUUID().toString();

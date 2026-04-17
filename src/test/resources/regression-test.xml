@@ -2,6 +2,9 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <!--định nghĩa toàn bộ test, chứa toàn bộ test-->
 <suite name="All Test Suite">
+    <listeners>
+        <listener class-name="Listeners.TestListener"></listener>
+    </listeners>
 <!--    nhóm test -->
     <test verbose="2" preserve-order="true"
           name="Regesstion test">

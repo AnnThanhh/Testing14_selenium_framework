@@ -44,6 +44,8 @@ public class BaseTest {
         LOG.info("Starting after method - capture screenshot if test failed for method: " + testResult.getName());
         if(testResult.getStatus() == ITestResult.FAILURE){
             ExtentReportManager.captureScreenshot(DriverFactory.getDriverThreadLocal(), testResult.getTestName());
+            //ghi log lỗi vào report
+            ExtentReportManager.fail(testResult.getThrowable().toString());
         }
     }
 

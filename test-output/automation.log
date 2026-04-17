@@ -1,0 +1,29 @@
+[2026-04-17 18:55:33] [INFO ] Register_01_Verify_Sucessfull - Starting berfore suite - initialize extent report
+[2026-04-17 18:55:33] [INFO ] TestListener - onStart
+[2026-04-17 18:55:33] [INFO ] Register_01_Verify_Sucessfull - Starting before class - initialize web driver
+[2026-04-17 18:55:34] [INFO ] Register_01_Verify_Sucessfull - Starting before method - create test in extent report for method: testValidRegister
+[2026-04-17 18:55:34] [INFO ] TestListener - onTestStart
+[2026-04-17 18:55:34] [INFO ] Register_01_Verify_Sucessfull - Truy cập vào trang https://demo1.cybersoft.edu.vn/
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Truy cập vào trang đăng ký
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhập dữ liệu hợp lệ vào username: f6824b45-4644-41c6-9a08-b08fbb7645e1
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhập dữ liệu hợp lệ vào password: Cybersoft@123
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhập dữ liệu hợp lệ vào confirm password: Cybersoft@123
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhập dữ liệu hợp lệ vào họ tên: Trịnh An Thành
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhập dữ liệu hợp lệ vào email: f6824b45-4644-41c6-9a08-b08fbb7645e1@gmail.com
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhấn vào nút đăng ký
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - VP1: Kiểm tra đăng ký thành công với message hiển thị trên dialog
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - VP2: Kiểm tra đăng nhập thành công sau khi đăng ký với message hiển thị trên dialog
+[2026-04-17 18:55:38] [INFO ] Register_01_Verify_Sucessfull - Nhập dữ liệu hợp lệ vào form đăng nhập
+[2026-04-17 18:55:39] [INFO ] TestListener - onTestFailure: testValidRegister - FAILED
+[2026-04-17 18:55:39] [ERROR] TestListener - Exception: java.lang.AssertionError: VP2: Đăng nhập thành công - MESSAGE DOES NOT MATCH expected [Đăng nhập thành công!] but found [Đăng nhập thành công]
+[2026-04-17 18:55:40] [INFO ] TestListener - Saved screenshot: /Users/at/Documents/Testing14/Selenium-framework/test-output/screenshots/testValidRegister_20260417_06_55_40.png
+[2026-04-17 18:55:40] [INFO ] Register_01_Verify_Sucessfull - Starting after method - capture screenshot if test failed for method: testValidRegister
+[2026-04-17 18:55:41] [INFO ] Register_01_Verify_Sucessfull - Starting after class - quit web driver
+[2026-04-17 18:55:41] [INFO ] Login01_Verify_Successfull - Starting before class - initialize web driver
+[2026-04-17 18:55:41] [INFO ] Login01_Verify_Successfull - Starting before method - create test in extent report for method: testValidLogin
+[2026-04-17 18:55:41] [INFO ] TestListener - onTestStart
+[2026-04-17 18:55:45] [INFO ] TestListener - onTestSuccess: testValidLogin - PASSED
+[2026-04-17 18:55:45] [INFO ] Login01_Verify_Successfull - Starting after method - capture screenshot if test failed for method: testValidLogin
+[2026-04-17 18:55:45] [INFO ] Login01_Verify_Successfull - Starting after class - quit web driver
+[2026-04-17 18:55:45] [INFO ] TestListener - onFinish
+[2026-04-17 18:55:45] [INFO ] Register_01_Verify_Sucessfull - Starting after suite - flush extent report
